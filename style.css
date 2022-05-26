@@ -1,0 +1,122 @@
+:root{
+    --Paleblue: hsl(225, 100%, 94%);
+    --Brightblue: hsl(245, 75%, 52%);
+    --Verypaleblue: hsl(225, 100%, 98%);
+    --Desaturatedblue: hsl(224, 23%, 55%);
+    --Darkblue: hsl(223, 47%, 23%);
+}
+body{
+    background-color: var(--Paleblue);
+    background-image: url(./images/pattern-background-desktop.svg);
+    background-size:contain;
+    background-repeat:no-repeat;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+}
+.container{
+    max-width: 350px;
+    margin: 0 auto;
+    position: relative;
+    top: 80px;
+    background-color:white;
+    border-radius: 15px;
+    /* border: 5px solid black; */
+}
+.img-top{
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px 15px 0px 0px;
+}
+.img-top img{
+    width: 100%;
+    display: block;
+}
+.contain{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+h2{
+    padding-top: 20px;
+    text-align: center;
+    color: var(--Darkblue);
+}
+.contain #para{
+    text-align: center;
+    color:var(--Desaturatedblue);
+    margin-top: 5px 0px;
+    font-size: .9em;
+    line-height: 20px;
+}
+.play-box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--Verypaleblue);
+    padding: 0px 15px 0px 15px;
+    border-radius: 15px;
+    margin-bottom: 10px;
+}
+.music{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.plan{
+    padding-left: 10px;
+    text-align: center;
+}
+.plan h4{
+    padding-bottom: 0%;
+    margin-bottom: 0px;
+    font-size: .9rem;
+    font-weight: 700;
+}
+.plan p{
+    padding-top: 0%;
+    margin-top: 0px;
+    color: var(--Desaturatedblue);
+    font-size: .9rem;
+}
+.change a{
+    font-size: .7rem;
+    font-weight: 800;
+}
+.change a:hover{
+    text-decoration: none;
+    color: hsla(245, 75%, 52%,.7);
+}
+.pay-button{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+}
+.pay-button #pay{
+    background-color: var(--Brightblue);
+    width: calc(100% + 37px);
+    padding: 15px 0px;
+    border-radius: 15px;
+    text-align: center;
+    color: white;
+    box-shadow: 5px 10px 22px rgb(207, 207, 217);
+}
+.pay-button #pay:hover{
+    background-color:hsla(245, 75%, 52%,.7);
+    cursor: pointer;
+}
+.change a:visited{
+    color: var(--Brightblue);
+}
+#cancel{
+    padding-top: 20px;
+    color: var(--Desaturatedblue);
+    font-size: 16px;
+    font-weight: 600;
+}
+#cancel:hover{
+    color: var(--Darkblue);
+    cursor: pointer;
+}
